@@ -1,0 +1,115 @@
+.banner {
+    background: url("./Baground.jpg")
+    no-repeat center center;
+    background-size: cover;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.display-6 {
+    color: #fff;
+}
+.display-1 {
+    color: #fff;
+}
+.display-7 {
+    color: rgb(103, 207, 248)
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 55%; }
+}
+
+.display-7 {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    border-right: 0.15em solid rgb(103, 207, 248); /* Adjust color and size as needed */
+    animation: typing 4.5s steps(30) infinite alternate;
+}
+
+  /* Responsive styling */
+@media (max-width: 768px) {
+    .display-7 {
+      font-size: 14px; /* Adjust font size for smaller screens */
+    }
+}
+
+
+.crop-img {
+    overflow: hidden;
+}
+
+.crop-img img {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.crop-img img:hover {
+    transform: scale(1.1);
+}
+
+.lingkaran{
+    display: inline-block;
+    border-radius: 50%;
+    width: 150px;
+    margin: auto;
+    height: 150px;
+    color: #fff;
+    background-color: #35c3dc;
+}
+
+.lingkaran i{
+    position: relative;
+    top: 30px;
+}
+
+.crop-img {
+    object-fit: cover;
+}
+
+#contact .contact {
+	flex-direction: column;
+	max-width: 1200px;
+	margin: 0 auto;
+	width: 90%;
+}
+#contact .contact-items {
+	/* max-width: 400px; */
+	width: 100%;
+}
+#contact .contact-item {
+	width: 80%;
+	padding: 20px;
+	text-align: center;
+	border-radius: 10px;
+	padding: 30px;
+	margin: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	box-shadow: 0px 0px 18px 0 #0000002c;
+	transition: 0.3s ease box-shadow;
+}
+#contact .contact-item:hover {
+	box-shadow: 0px 0px 5px 0 #0000002c;
+}
+#contact .icon {
+	width: 70px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+#contact .contact-info h1 {
+	font-size: 25px;
+	font-weight: 500;
+	margin-bottom: 5px;
+}
+#contact .contact-info h2 {
+	font-size: 15px;
+	line-height: 2rem;
+	font-weight: 500;
+}
